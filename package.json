@@ -1,0 +1,15 @@
+{
+  "name": "my-package",
+  "version": "1.0.0",
+  "babel": {
+    "plugins": [
+    ],
+    "ignore": [
+      "foo.js",
+      "bar/**/*.js"
+    ]
+  },
+  "devDependencies": {
+    "babel-cli": "^6.3.17"
+  }
+}
