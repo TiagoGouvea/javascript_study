@@ -1,3 +1,5 @@
+// Most of code from: http://es6-features.org/#ObjectMatchingShorthandNotation
+
 // Constants
 const PI = 3.141593;
 let name = "tiago";
@@ -36,8 +38,16 @@ console.log('é'.length);
 person = {
     name: "Tiago",
     lastName: "Gouvea",
-    fullName: [this.name + " " + this.lastName],
+    fullName: [name + " " + lastName],
     fullname2: function () {
         return this.name + " " + this.lastName;
     }
 };
+
+// Destructuring Assignment
+var { lastName, fullName2 } = person;
+console.log(lastName);
+
+// Modules
+import * as second from "~/www/Prototipos/javascript_study/lib/second";
+sayHo("James");
